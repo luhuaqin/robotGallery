@@ -27,9 +27,12 @@ const App : React.FC = (props) => {
   const [loading, setLoading] = useState<boolean>(false)
   const [error, setError] = useState<string>()
 
+  // useEffect(() => {
+  //   document.title = `点击${count}次`
+  // }, [count])
   useEffect(() => {
-    document.title = `点击${count}次`
-  }, [count])
+    document.title = "Robot Gallery"
+  }, [])
 
   // useEffect(() => {
   //   fetch("https://jsonplaceholder.typicode.com/users")
